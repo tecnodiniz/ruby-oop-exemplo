@@ -1,0 +1,14 @@
+require_relative 'aluno';
+require_relative 'professor';
+require_relative 'turma';
+
+prof1 = Professor.new(2001,'Henrique','ADS');
+aluno1 = Aluno.new(1001,'Eduardo Diniz',27,'ADS');
+turma1 = Turma.new('Turma A',145,prof1);
+
+turma1.add_aluno(aluno1);
+
+aluno2 = Aluno.new(1002,'Ricardo Augusto',26,'ADS');
+
+turma1.add_aluno(aluno2);
+
